@@ -1,110 +1,30 @@
-﻿
-
-
-<html>
-	<head>
-		<title>TAXPAYER PREMIUM</title>
-		<link rel="icon" type="image/ico" href="1.ico" sizes="45x48">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">		
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>			
-		<script src="https://use.fontawesome.com/a5e30dd034.js"></script>
-		<link rel="stylesheet" href="style.css" >
-		
-		
-	</head>
-    
-	<body class="loading">		
-		<div id="wrapper">
-			<video autoplay="1" loop="" id="player">
-            <source src="video.mp4" type="video/mp4">
-             </video>     
-			<div id="overlay"></div>
-			<div id="main">				
-					<header id="header">
-                      <span id="doc_time">Time</span>					
-						<h1>taxpayer(Nalogi)</h1>
-						<p>&nbsp;&bull;&nbsp;best csgo software&nbsp;&bull;&nbsp;</p>
-						<nav>
-							<ul>	
-                                                                <li><a href="https://vk.com/liitlerunu"  target="_blank" class="fa fa-vk"></a></li>	
-
-                                                              <p><a href="https://primearea.biz/product/165839/">buy</a></p>
-
-                                                                																
-																
-							</ul>
-							<ul>
-							<marquee aligt="center" scrollamount="100" width="540" style="width:540px;">&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;</marquee>
-							</ul>						
-							<p>by <a href="https://vk.com/liitlerunu">taxpayer</a></p>			
-							<ul>					
-							<marquee aligt="center" scrollamount="100" width="540" style="width:540px;">&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;</marquee>
-							</ul>	
-						</nav>
-					</header>				
-			</div>
-		</div>
-		
-	</body>
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-function clock() {
-var d = new Date();
-var hours = d.getHours();
-var minutes = d.getMinutes();
-var seconds = d.getSeconds();
-
-
-if (hours <= 9) hours = "0" + hours;
-if (minutes <= 9) minutes = "0" + minutes;
-if (seconds <= 9) seconds = "0" + seconds;
-
-date_time = hours + ":" + minutes + ":" + seconds;
-if (document.layers) {
- document.layers.doc_time.document.write(date_time);
- document.layers.doc_time.document.close();
-}
-else document.getElementById("doc_time").innerHTML = date_time;
- setTimeout("clock()", 1000);
-}
-</script>
-<script type="text/javascript">
- clock();
-</script>
-
-</script>
-<script> 
-document.onkeydown = function(e) { 
-if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly. 
-} 
-return false; 
-}; 
-</script>
-
-<script> 
-function click() { 
-if (event.button==2||event.button==3) { 
-oncontextmenu='return false'; 
-} 
-} 
-document.onmousedown=click 
-document.oncontextmenu = new Function("return false;") 
-</script>
-</html>
+<div class="clock-container">
+  <div class="clock-col">
+    <p class="clock-day clock-timer">
+    </p>
+    <p class="clock-label">
+      Day
+    </p>
+  </div>
+  <div class="clock-col">
+    <p class="clock-hours clock-timer">
+    </p>
+    <p class="clock-label">
+      Hours
+    </p>
+  </div>
+  <div class="clock-col">
+    <p class="clock-minutes clock-timer">
+    </p>
+    <p class="clock-label">
+      Minutes
+    </p>
+  </div>
+  <div class="clock-col">
+    <p class="clock-seconds clock-timer">
+    </p>
+    <p class="clock-label">
+      Seconds
+    </p>
+  </div>
+</div>
