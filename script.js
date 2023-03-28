@@ -1,14 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-  setInterval(function() {
-    var currentTime = moment();
-    var days = currentTime.diff(moment().startOf('day'), 'days');
-    var hours = currentTime.diff(moment().startOf('day'), 'hours') % 24;
-    var minutes = currentTime.diff(moment().startOf('day'), 'minutes') % 60;
-    var seconds = currentTime.diff(moment().startOf('day'), 'seconds') % 60;
+document.addEventListener('DOMContentLoaded', () =>
+  requestAnimationFrame(updateTime)
+)
 
-    document.querySelector('.clock-day').innerHTML = days;
-    document.querySelector('.clock-hours').innerHTML = hours;
-    document.querySelector('.clock-minutes').innerHTML = minutes;
-    document.querySelector('.clock-seconds').innerHTML = seconds;
-  }, 1000);
-});
+function updateTime() {
+  document.documentElement.style.setProperty('--timer-day', "'" + moment().format("dd") + "'");
+  document.documentElement.style.setProperty('--timer-hours', "'" + moment().format("k") + "'");
+  document.documentElement.style.setProperty('--timer-minutes', "'" + moment().format("mm") + "'");
+  document.documentElement.style.setProperty('--timer-seconds', "'" + moment().format("ss") + "'");
+  requestAnimationFrame(updateTime);
+}
